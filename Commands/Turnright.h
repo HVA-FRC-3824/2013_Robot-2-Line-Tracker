@@ -25,11 +25,12 @@ private:
    float m_startGyroAngle;
    float m_setPoint;
    float m_threshold;
+   bool m_inRange;
    PIDController *m_PIDcontroller;
+   Timer *m_timer;
 
 public:
 	Turnright();
-	Turnright(float p, float i, float d);
 	~Turnright();
 	virtual void Initialize();
 	virtual void Execute();

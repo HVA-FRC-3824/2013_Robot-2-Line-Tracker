@@ -244,9 +244,9 @@
         </mapAttribute>
     </attributes>
     <buildtargets>
-        <buildtarget buildtool="Linker" name="Team 2 Line Tracker" passed="false" targetname="Team 2 Line Tracker">
+        <buildtarget buildtool="Linker" name="Robot-2-Line-Tracker" passed="false" targetname="Robot-2-Line-Tracker">
             <contents>
-                <folder name="/Team 2 Line Tracker" recursive="true"/>
+                <folder name="/Robot-2-Line-Tracker" recursive="true"/>
             </contents>
         </buildtarget>
     </buildtargets>
