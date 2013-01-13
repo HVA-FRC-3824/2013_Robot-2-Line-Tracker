@@ -9,8 +9,9 @@
 // it from being updated in th future.
 
 
-#ifndef TURN_RIGHT_H
-#define TURN_RIGHT_H
+#ifndef TURN_RIGHT_PID_H
+#define TURN_RIGHT_PID_H
+
 
 #include "Commands/Subsystem.h"
 #include "../Robot.h"
@@ -20,28 +21,14 @@
  *
  * @author ExampleAuthor
  */
-class Turnright: public Command 
-{
-private:
-   float m_startGyroAngle;
-   float m_setPoint;
-   float m_threshold;
-   PIDController *m_PIDcontroller;
-
+class TurnRightPID: public Command {
 public:
-	Turnright();
-	Turnright(float p, float i, float d);
-	~Turnright();
+	TurnRightPID();
 	virtual void Initialize();
 	virtual void Execute();
 	virtual bool IsFinished();
 	virtual void End();
 	virtual void Interrupted();
-	
-	float GetPIDError();
-	bool GetOnTarget();
-	void SetThreshold(float threshold);
-	void SetPID(float p, float i, float d);
 };
 
 #endif

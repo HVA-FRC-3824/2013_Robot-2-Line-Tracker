@@ -22,7 +22,7 @@ void TeleopXboxDrive::Initialize() {
 // Called repeatedly when this Command is scheduled to run
 void TeleopXboxDrive::Execute() {
 	Robot::drivetrain->TankDrive(Robot::oi->getXboxJoystick()->GetRawAxis(2),
-	      Robot::oi->getXboxJoystick()->GetRawAxis(4));
+	      Robot::oi->getXboxJoystick()->GetRawAxis(5));
 }
 // Make this return true when this Command no longer needs to run execute()
 bool TeleopXboxDrive::IsFinished() {

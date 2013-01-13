@@ -32,7 +32,7 @@ MODE_DIR := NonDebug
 endif
 OBJ_DIR := .
 WS_ROOT_DIR := C:/WindRiver/workspace
-PRJ_ROOT_DIR := $(WS_ROOT_DIR)/Robot-2-Line-Tracker
+PRJ_ROOT_DIR := $(WS_ROOT_DIR)/Team\ 2\ Line\ Tracker
 
 
 
@@ -79,147 +79,163 @@ endif
 
 
 #Project Targets
-PROJECT_TARGETS = Robot-2-Line-Tracker/$(MODE_DIR)/Robot-2-Line-Tracker.out
+PROJECT_TARGETS = Team\ 2\ Line\ Tracker/$(MODE_DIR)/Team\ 2\ Line\ Tracker.out
 
 
 #Rules
 
-# Robot-2-Line-Tracker
+# Team 2 Line Tracker
 ifeq ($(DEBUG_MODE),1)
-Robot-2-Line-Tracker/$(MODE_DIR)/% : DEBUGFLAGS_C-Compiler = -g
-Robot-2-Line-Tracker/$(MODE_DIR)/% : DEBUGFLAGS_C++-Compiler = -g
-Robot-2-Line-Tracker/$(MODE_DIR)/% : DEBUGFLAGS_Linker = -g
-Robot-2-Line-Tracker/$(MODE_DIR)/% : DEBUGFLAGS_Partial-Image-Linker = 
-Robot-2-Line-Tracker/$(MODE_DIR)/% : DEBUGFLAGS_Librarian = 
-Robot-2-Line-Tracker/$(MODE_DIR)/% : DEBUGFLAGS_Assembler = -g
+Team\ 2\ Line\ Tracker/$(MODE_DIR)/% : DEBUGFLAGS_C-Compiler = -g
+Team\ 2\ Line\ Tracker/$(MODE_DIR)/% : DEBUGFLAGS_C++-Compiler = -g
+Team\ 2\ Line\ Tracker/$(MODE_DIR)/% : DEBUGFLAGS_Linker = -g
+Team\ 2\ Line\ Tracker/$(MODE_DIR)/% : DEBUGFLAGS_Partial-Image-Linker = 
+Team\ 2\ Line\ Tracker/$(MODE_DIR)/% : DEBUGFLAGS_Librarian = 
+Team\ 2\ Line\ Tracker/$(MODE_DIR)/% : DEBUGFLAGS_Assembler = -g
 else
-Robot-2-Line-Tracker/$(MODE_DIR)/% : DEBUGFLAGS_C-Compiler = -O2 -fstrength-reduce -fno-builtin
-Robot-2-Line-Tracker/$(MODE_DIR)/% : DEBUGFLAGS_C++-Compiler = -O2 -fstrength-reduce -fno-builtin
-Robot-2-Line-Tracker/$(MODE_DIR)/% : DEBUGFLAGS_Linker = -O2 -fstrength-reduce -fno-builtin
-Robot-2-Line-Tracker/$(MODE_DIR)/% : DEBUGFLAGS_Partial-Image-Linker = 
-Robot-2-Line-Tracker/$(MODE_DIR)/% : DEBUGFLAGS_Librarian = 
-Robot-2-Line-Tracker/$(MODE_DIR)/% : DEBUGFLAGS_Assembler = -O2 -fstrength-reduce -fno-builtin
+Team\ 2\ Line\ Tracker/$(MODE_DIR)/% : DEBUGFLAGS_C-Compiler = -O2 -fstrength-reduce -fno-builtin
+Team\ 2\ Line\ Tracker/$(MODE_DIR)/% : DEBUGFLAGS_C++-Compiler = -O2 -fstrength-reduce -fno-builtin
+Team\ 2\ Line\ Tracker/$(MODE_DIR)/% : DEBUGFLAGS_Linker = -O2 -fstrength-reduce -fno-builtin
+Team\ 2\ Line\ Tracker/$(MODE_DIR)/% : DEBUGFLAGS_Partial-Image-Linker = 
+Team\ 2\ Line\ Tracker/$(MODE_DIR)/% : DEBUGFLAGS_Librarian = 
+Team\ 2\ Line\ Tracker/$(MODE_DIR)/% : DEBUGFLAGS_Assembler = -O2 -fstrength-reduce -fno-builtin
 endif
-Robot-2-Line-Tracker/$(MODE_DIR)/% : IDE_INCLUDES = -I$(WIND_BASE)/target/h -I$(WIND_BASE)/target/h/WPILib -I$(WIND_BASE)/target/h/wrn/coreip 
-Robot-2-Line-Tracker/$(MODE_DIR)/% : IDE_LIBRARIES = $(WIND_BASE)/target/lib/WPILib.a 
-Robot-2-Line-Tracker/$(MODE_DIR)/% : IDE_DEFINES = 
-Robot-2-Line-Tracker/$(MODE_DIR)/% : PROJECT_TYPE = DKM
-Robot-2-Line-Tracker/$(MODE_DIR)/% : DEFINES = 
-Robot-2-Line-Tracker/$(MODE_DIR)/% : EXPAND_DBG = 0
-Robot-2-Line-Tracker/$(MODE_DIR)/% : VX_CPU_FAMILY = ppc
-Robot-2-Line-Tracker/$(MODE_DIR)/% : CPU = PPC603
-Robot-2-Line-Tracker/$(MODE_DIR)/% : TOOL_FAMILY = gnu
-Robot-2-Line-Tracker/$(MODE_DIR)/% : TOOL = gnu
-Robot-2-Line-Tracker/$(MODE_DIR)/% : TOOL_PATH = 
-Robot-2-Line-Tracker/$(MODE_DIR)/% : CC_ARCH_SPEC = -mcpu=603 -mstrict-align -mno-implicit-fp -mlongcall
-Robot-2-Line-Tracker/$(MODE_DIR)/% : LIBPATH = 
-Robot-2-Line-Tracker/$(MODE_DIR)/% : LIBS = 
-Robot-2-Line-Tracker/$(MODE_DIR)/% : OBJ_DIR := Robot-2-Line-Tracker/$(MODE_DIR)
+Team\ 2\ Line\ Tracker/$(MODE_DIR)/% : IDE_INCLUDES = -I$(WIND_BASE)/target/h -I$(WIND_BASE)/target/h/WPILib -I$(WIND_BASE)/target/h/wrn/coreip 
+Team\ 2\ Line\ Tracker/$(MODE_DIR)/% : IDE_LIBRARIES = $(WIND_BASE)/target/lib/WPILib.a 
+Team\ 2\ Line\ Tracker/$(MODE_DIR)/% : IDE_DEFINES = 
+Team\ 2\ Line\ Tracker/$(MODE_DIR)/% : PROJECT_TYPE = DKM
+Team\ 2\ Line\ Tracker/$(MODE_DIR)/% : DEFINES = 
+Team\ 2\ Line\ Tracker/$(MODE_DIR)/% : EXPAND_DBG = 0
+Team\ 2\ Line\ Tracker/$(MODE_DIR)/% : VX_CPU_FAMILY = ppc
+Team\ 2\ Line\ Tracker/$(MODE_DIR)/% : CPU = PPC603
+Team\ 2\ Line\ Tracker/$(MODE_DIR)/% : TOOL_FAMILY = gnu
+Team\ 2\ Line\ Tracker/$(MODE_DIR)/% : TOOL = gnu
+Team\ 2\ Line\ Tracker/$(MODE_DIR)/% : TOOL_PATH = 
+Team\ 2\ Line\ Tracker/$(MODE_DIR)/% : CC_ARCH_SPEC = -mcpu=603 -mstrict-align -mno-implicit-fp -mlongcall
+Team\ 2\ Line\ Tracker/$(MODE_DIR)/% : LIBPATH = 
+Team\ 2\ Line\ Tracker/$(MODE_DIR)/% : LIBS = 
+Team\ 2\ Line\ Tracker/$(MODE_DIR)/% : OBJ_DIR := Team\ 2\ Line\ Tracker/$(MODE_DIR)
 
-Robot-2-Line-Tracker/$(MODE_DIR)/Objects/Robot-2-Line-Tracker/Commands/AutonomousCommand.o : $(PRJ_ROOT_DIR)/Commands/AutonomousCommand.cpp $(FORCE_FILE_BUILD)
+Team\ 2\ Line\ Tracker/$(MODE_DIR)/Objects/Team\ 2\ Line\ Tracker/Commands/AutonomousCommand.o : $(PRJ_ROOT_DIR)/Commands/AutonomousCommand.cpp $(FORCE_FILE_BUILD)
 	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall  -MD -MP -mlongcall $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL   $(DEFINES) -o "$@" -c "$<"
 
 
-Robot-2-Line-Tracker/$(MODE_DIR)/Objects/Robot-2-Line-Tracker/Commands/DisplayButtons.o : $(PRJ_ROOT_DIR)/Commands/DisplayButtons.cpp $(FORCE_FILE_BUILD)
+Team\ 2\ Line\ Tracker/$(MODE_DIR)/Objects/Team\ 2\ Line\ Tracker/Commands/DisplayButtons.o : $(PRJ_ROOT_DIR)/Commands/DisplayButtons.cpp $(FORCE_FILE_BUILD)
 	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall  -MD -MP -mlongcall $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL   $(DEFINES) -o "$@" -c "$<"
 
 
-Robot-2-Line-Tracker/$(MODE_DIR)/Objects/Robot-2-Line-Tracker/Commands/Drivetowall.o : $(PRJ_ROOT_DIR)/Commands/Drivetowall.cpp $(FORCE_FILE_BUILD)
+Team\ 2\ Line\ Tracker/$(MODE_DIR)/Objects/Team\ 2\ Line\ Tracker/Commands/Drivetowall.o : $(PRJ_ROOT_DIR)/Commands/Drivetowall.cpp $(FORCE_FILE_BUILD)
 	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall  -MD -MP -mlongcall $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL   $(DEFINES) -o "$@" -c "$<"
 
 
-Robot-2-Line-Tracker/$(MODE_DIR)/Objects/Robot-2-Line-Tracker/Commands/Followline.o : $(PRJ_ROOT_DIR)/Commands/Followline.cpp $(FORCE_FILE_BUILD)
+Team\ 2\ Line\ Tracker/$(MODE_DIR)/Objects/Team\ 2\ Line\ Tracker/Commands/Followline.o : $(PRJ_ROOT_DIR)/Commands/Followline.cpp $(FORCE_FILE_BUILD)
 	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall  -MD -MP -mlongcall $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL   $(DEFINES) -o "$@" -c "$<"
 
 
-Robot-2-Line-Tracker/$(MODE_DIR)/Objects/Robot-2-Line-Tracker/Commands/Searchforline.o : $(PRJ_ROOT_DIR)/Commands/Searchforline.cpp $(FORCE_FILE_BUILD)
+Team\ 2\ Line\ Tracker/$(MODE_DIR)/Objects/Team\ 2\ Line\ Tracker/Commands/Searchforline.o : $(PRJ_ROOT_DIR)/Commands/Searchforline.cpp $(FORCE_FILE_BUILD)
 	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall  -MD -MP -mlongcall $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL   $(DEFINES) -o "$@" -c "$<"
 
 
-Robot-2-Line-Tracker/$(MODE_DIR)/Objects/Robot-2-Line-Tracker/Commands/TeleopJoystickDrive.o : $(PRJ_ROOT_DIR)/Commands/TeleopJoystickDrive.cpp $(FORCE_FILE_BUILD)
+Team\ 2\ Line\ Tracker/$(MODE_DIR)/Objects/Team\ 2\ Line\ Tracker/Commands/ShowGyroValue.o : $(PRJ_ROOT_DIR)/Commands/ShowGyroValue.cpp $(FORCE_FILE_BUILD)
 	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall  -MD -MP -mlongcall $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL   $(DEFINES) -o "$@" -c "$<"
 
 
-Robot-2-Line-Tracker/$(MODE_DIR)/Objects/Robot-2-Line-Tracker/Commands/TeleopXboxDrive.o : $(PRJ_ROOT_DIR)/Commands/TeleopXboxDrive.cpp $(FORCE_FILE_BUILD)
+Team\ 2\ Line\ Tracker/$(MODE_DIR)/Objects/Team\ 2\ Line\ Tracker/Commands/TeleopJoystickDrive.o : $(PRJ_ROOT_DIR)/Commands/TeleopJoystickDrive.cpp $(FORCE_FILE_BUILD)
 	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall  -MD -MP -mlongcall $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL   $(DEFINES) -o "$@" -c "$<"
 
 
-Robot-2-Line-Tracker/$(MODE_DIR)/Objects/Robot-2-Line-Tracker/Commands/Turnleft.o : $(PRJ_ROOT_DIR)/Commands/Turnleft.cpp $(FORCE_FILE_BUILD)
+Team\ 2\ Line\ Tracker/$(MODE_DIR)/Objects/Team\ 2\ Line\ Tracker/Commands/TeleopXboxDrive.o : $(PRJ_ROOT_DIR)/Commands/TeleopXboxDrive.cpp $(FORCE_FILE_BUILD)
 	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall  -MD -MP -mlongcall $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL   $(DEFINES) -o "$@" -c "$<"
 
 
-Robot-2-Line-Tracker/$(MODE_DIR)/Objects/Robot-2-Line-Tracker/Commands/Turnright.o : $(PRJ_ROOT_DIR)/Commands/Turnright.cpp $(FORCE_FILE_BUILD)
+Team\ 2\ Line\ Tracker/$(MODE_DIR)/Objects/Team\ 2\ Line\ Tracker/Commands/TurnRightPID.o : $(PRJ_ROOT_DIR)/Commands/TurnRightPID.cpp $(FORCE_FILE_BUILD)
 	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall  -MD -MP -mlongcall $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL   $(DEFINES) -o "$@" -c "$<"
 
 
-Robot-2-Line-Tracker/$(MODE_DIR)/Objects/Robot-2-Line-Tracker/Commands/XboxDrive.o : $(PRJ_ROOT_DIR)/Commands/XboxDrive.cpp $(FORCE_FILE_BUILD)
+Team\ 2\ Line\ Tracker/$(MODE_DIR)/Objects/Team\ 2\ Line\ Tracker/Commands/Turnleft.o : $(PRJ_ROOT_DIR)/Commands/Turnleft.cpp $(FORCE_FILE_BUILD)
 	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall  -MD -MP -mlongcall $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL   $(DEFINES) -o "$@" -c "$<"
 
 
-Robot-2-Line-Tracker/$(MODE_DIR)/Objects/Robot-2-Line-Tracker/OI.o : $(PRJ_ROOT_DIR)/OI.cpp $(FORCE_FILE_BUILD)
+Team\ 2\ Line\ Tracker/$(MODE_DIR)/Objects/Team\ 2\ Line\ Tracker/Commands/Turnright.o : $(PRJ_ROOT_DIR)/Commands/Turnright.cpp $(FORCE_FILE_BUILD)
 	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall  -MD -MP -mlongcall $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL   $(DEFINES) -o "$@" -c "$<"
 
 
-Robot-2-Line-Tracker/$(MODE_DIR)/Objects/Robot-2-Line-Tracker/Robot.o : $(PRJ_ROOT_DIR)/Robot.cpp $(FORCE_FILE_BUILD)
+Team\ 2\ Line\ Tracker/$(MODE_DIR)/Objects/Team\ 2\ Line\ Tracker/Commands/UpdateTurnPIDValues.o : $(PRJ_ROOT_DIR)/Commands/UpdateTurnPIDValues.cpp $(FORCE_FILE_BUILD)
 	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall  -MD -MP -mlongcall $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL   $(DEFINES) -o "$@" -c "$<"
 
 
-Robot-2-Line-Tracker/$(MODE_DIR)/Objects/Robot-2-Line-Tracker/RobotMap.o : $(PRJ_ROOT_DIR)/RobotMap.cpp $(FORCE_FILE_BUILD)
+Team\ 2\ Line\ Tracker/$(MODE_DIR)/Objects/Team\ 2\ Line\ Tracker/Commands/XboxDrive.o : $(PRJ_ROOT_DIR)/Commands/XboxDrive.cpp $(FORCE_FILE_BUILD)
 	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall  -MD -MP -mlongcall $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL   $(DEFINES) -o "$@" -c "$<"
 
 
-Robot-2-Line-Tracker/$(MODE_DIR)/Objects/Robot-2-Line-Tracker/Subsystems/Drivetrain.o : $(PRJ_ROOT_DIR)/Subsystems/Drivetrain.cpp $(FORCE_FILE_BUILD)
+Team\ 2\ Line\ Tracker/$(MODE_DIR)/Objects/Team\ 2\ Line\ Tracker/OI.o : $(PRJ_ROOT_DIR)/OI.cpp $(FORCE_FILE_BUILD)
 	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall  -MD -MP -mlongcall $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL   $(DEFINES) -o "$@" -c "$<"
 
 
-Robot-2-Line-Tracker/$(MODE_DIR)/Objects/Robot-2-Line-Tracker/Subsystems/Linetracker.o : $(PRJ_ROOT_DIR)/Subsystems/Linetracker.cpp $(FORCE_FILE_BUILD)
+Team\ 2\ Line\ Tracker/$(MODE_DIR)/Objects/Team\ 2\ Line\ Tracker/Robot.o : $(PRJ_ROOT_DIR)/Robot.cpp $(FORCE_FILE_BUILD)
 	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall  -MD -MP -mlongcall $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL   $(DEFINES) -o "$@" -c "$<"
 
 
-Robot-2-Line-Tracker/$(MODE_DIR)/Objects/Robot-2-Line-Tracker/Subsystems/Orientation.o : $(PRJ_ROOT_DIR)/Subsystems/Orientation.cpp $(FORCE_FILE_BUILD)
+Team\ 2\ Line\ Tracker/$(MODE_DIR)/Objects/Team\ 2\ Line\ Tracker/RobotMap.o : $(PRJ_ROOT_DIR)/RobotMap.cpp $(FORCE_FILE_BUILD)
 	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall  -MD -MP -mlongcall $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL   $(DEFINES) -o "$@" -c "$<"
 
 
-Robot-2-Line-Tracker/$(MODE_DIR)/Objects/Robot-2-Line-Tracker/Subsystems/Rangefinder.o : $(PRJ_ROOT_DIR)/Subsystems/Rangefinder.cpp $(FORCE_FILE_BUILD)
+Team\ 2\ Line\ Tracker/$(MODE_DIR)/Objects/Team\ 2\ Line\ Tracker/Subsystems/Drivetrain.o : $(PRJ_ROOT_DIR)/Subsystems/Drivetrain.cpp $(FORCE_FILE_BUILD)
 	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall  -MD -MP -mlongcall $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL   $(DEFINES) -o "$@" -c "$<"
 
 
-OBJECTS_Robot-2-Line-Tracker = Robot-2-Line-Tracker/$(MODE_DIR)/Objects/Robot-2-Line-Tracker/Commands/AutonomousCommand.o \
-	 Robot-2-Line-Tracker/$(MODE_DIR)/Objects/Robot-2-Line-Tracker/Commands/DisplayButtons.o \
-	 Robot-2-Line-Tracker/$(MODE_DIR)/Objects/Robot-2-Line-Tracker/Commands/Drivetowall.o \
-	 Robot-2-Line-Tracker/$(MODE_DIR)/Objects/Robot-2-Line-Tracker/Commands/Followline.o \
-	 Robot-2-Line-Tracker/$(MODE_DIR)/Objects/Robot-2-Line-Tracker/Commands/Searchforline.o \
-	 Robot-2-Line-Tracker/$(MODE_DIR)/Objects/Robot-2-Line-Tracker/Commands/TeleopJoystickDrive.o \
-	 Robot-2-Line-Tracker/$(MODE_DIR)/Objects/Robot-2-Line-Tracker/Commands/TeleopXboxDrive.o \
-	 Robot-2-Line-Tracker/$(MODE_DIR)/Objects/Robot-2-Line-Tracker/Commands/Turnleft.o \
-	 Robot-2-Line-Tracker/$(MODE_DIR)/Objects/Robot-2-Line-Tracker/Commands/Turnright.o \
-	 Robot-2-Line-Tracker/$(MODE_DIR)/Objects/Robot-2-Line-Tracker/Commands/XboxDrive.o \
-	 Robot-2-Line-Tracker/$(MODE_DIR)/Objects/Robot-2-Line-Tracker/OI.o \
-	 Robot-2-Line-Tracker/$(MODE_DIR)/Objects/Robot-2-Line-Tracker/Robot.o \
-	 Robot-2-Line-Tracker/$(MODE_DIR)/Objects/Robot-2-Line-Tracker/RobotMap.o \
-	 Robot-2-Line-Tracker/$(MODE_DIR)/Objects/Robot-2-Line-Tracker/Subsystems/Drivetrain.o \
-	 Robot-2-Line-Tracker/$(MODE_DIR)/Objects/Robot-2-Line-Tracker/Subsystems/Linetracker.o \
-	 Robot-2-Line-Tracker/$(MODE_DIR)/Objects/Robot-2-Line-Tracker/Subsystems/Orientation.o \
-	 Robot-2-Line-Tracker/$(MODE_DIR)/Objects/Robot-2-Line-Tracker/Subsystems/Rangefinder.o
+Team\ 2\ Line\ Tracker/$(MODE_DIR)/Objects/Team\ 2\ Line\ Tracker/Subsystems/Linetracker.o : $(PRJ_ROOT_DIR)/Subsystems/Linetracker.cpp $(FORCE_FILE_BUILD)
+	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall  -MD -MP -mlongcall $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL   $(DEFINES) -o "$@" -c "$<"
 
-Robot-2-Line-Tracker/$(MODE_DIR)/Robot-2-Line-Tracker.out : $(OBJECTS_Robot-2-Line-Tracker)
-	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@";rm -f "$@";nmppc $(OBJECTS_Robot-2-Line-Tracker) $(IDE_LIBRARIES) | tclsh $(WIND_BASE)/host/resource/hutils/tcl/munch.tcl -c ppc > $(OBJ_DIR)/ctdt.c; $(TOOL_PATH)ccppc $(DEBUGFLAGS_Linker) $(CC_ARCH_SPEC) -fdollars-in-identifiers -Wall $(ADDED_CFLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL   $(DEFINES)  -o $(OBJ_DIR)/ctdt.o -c $(OBJ_DIR)/ctdt.c; $(TOOL_PATH)ccppc -r -nostdlib -Wl,-X -T $(WIND_BASE)/target/h/tool/gnu/ldscripts/link.OUT -o "$@" $(OBJ_DIR)/ctdt.o $(OBJECTS_Robot-2-Line-Tracker) $(IDE_LIBRARIES) $(LIBPATH) $(LIBS)  $(ADDED_LIBPATH) $(ADDED_LIBS) && if [ "$(EXPAND_DBG)" = "1" ]; then plink "$@";fi
 
-Robot-2-Line-Tracker/$(MODE_DIR)/Robot-2-Line-Tracker_compile_file : $(FILE) ;
+Team\ 2\ Line\ Tracker/$(MODE_DIR)/Objects/Team\ 2\ Line\ Tracker/Subsystems/Orientation.o : $(PRJ_ROOT_DIR)/Subsystems/Orientation.cpp $(FORCE_FILE_BUILD)
+	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall  -MD -MP -mlongcall $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL   $(DEFINES) -o "$@" -c "$<"
 
-_clean :: Robot-2-Line-Tracker/$(MODE_DIR)/Robot-2-Line-Tracker_clean
 
-Robot-2-Line-Tracker/$(MODE_DIR)/Robot-2-Line-Tracker_clean : 
-	$(TRACE_FLAG)if [ -d "Robot-2-Line-Tracker" ]; then cd "Robot-2-Line-Tracker"; rm -rf $(MODE_DIR); fi
+Team\ 2\ Line\ Tracker/$(MODE_DIR)/Objects/Team\ 2\ Line\ Tracker/Subsystems/Rangefinder.o : $(PRJ_ROOT_DIR)/Subsystems/Rangefinder.cpp $(FORCE_FILE_BUILD)
+	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall  -MD -MP -mlongcall $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL   $(DEFINES) -o "$@" -c "$<"
+
+
+OBJECTS_Team-2-Line-Tracker = Team\ 2\ Line\ Tracker/$(MODE_DIR)/Objects/Team\ 2\ Line\ Tracker/Commands/AutonomousCommand.o \
+	 Team\ 2\ Line\ Tracker/$(MODE_DIR)/Objects/Team\ 2\ Line\ Tracker/Commands/DisplayButtons.o \
+	 Team\ 2\ Line\ Tracker/$(MODE_DIR)/Objects/Team\ 2\ Line\ Tracker/Commands/Drivetowall.o \
+	 Team\ 2\ Line\ Tracker/$(MODE_DIR)/Objects/Team\ 2\ Line\ Tracker/Commands/Followline.o \
+	 Team\ 2\ Line\ Tracker/$(MODE_DIR)/Objects/Team\ 2\ Line\ Tracker/Commands/Searchforline.o \
+	 Team\ 2\ Line\ Tracker/$(MODE_DIR)/Objects/Team\ 2\ Line\ Tracker/Commands/ShowGyroValue.o \
+	 Team\ 2\ Line\ Tracker/$(MODE_DIR)/Objects/Team\ 2\ Line\ Tracker/Commands/TeleopJoystickDrive.o \
+	 Team\ 2\ Line\ Tracker/$(MODE_DIR)/Objects/Team\ 2\ Line\ Tracker/Commands/TeleopXboxDrive.o \
+	 Team\ 2\ Line\ Tracker/$(MODE_DIR)/Objects/Team\ 2\ Line\ Tracker/Commands/TurnRightPID.o \
+	 Team\ 2\ Line\ Tracker/$(MODE_DIR)/Objects/Team\ 2\ Line\ Tracker/Commands/Turnleft.o \
+	 Team\ 2\ Line\ Tracker/$(MODE_DIR)/Objects/Team\ 2\ Line\ Tracker/Commands/Turnright.o \
+	 Team\ 2\ Line\ Tracker/$(MODE_DIR)/Objects/Team\ 2\ Line\ Tracker/Commands/UpdateTurnPIDValues.o \
+	 Team\ 2\ Line\ Tracker/$(MODE_DIR)/Objects/Team\ 2\ Line\ Tracker/Commands/XboxDrive.o \
+	 Team\ 2\ Line\ Tracker/$(MODE_DIR)/Objects/Team\ 2\ Line\ Tracker/OI.o \
+	 Team\ 2\ Line\ Tracker/$(MODE_DIR)/Objects/Team\ 2\ Line\ Tracker/Robot.o \
+	 Team\ 2\ Line\ Tracker/$(MODE_DIR)/Objects/Team\ 2\ Line\ Tracker/RobotMap.o \
+	 Team\ 2\ Line\ Tracker/$(MODE_DIR)/Objects/Team\ 2\ Line\ Tracker/Subsystems/Drivetrain.o \
+	 Team\ 2\ Line\ Tracker/$(MODE_DIR)/Objects/Team\ 2\ Line\ Tracker/Subsystems/Linetracker.o \
+	 Team\ 2\ Line\ Tracker/$(MODE_DIR)/Objects/Team\ 2\ Line\ Tracker/Subsystems/Orientation.o \
+	 Team\ 2\ Line\ Tracker/$(MODE_DIR)/Objects/Team\ 2\ Line\ Tracker/Subsystems/Rangefinder.o
+
+Team\ 2\ Line\ Tracker/$(MODE_DIR)/Team\ 2\ Line\ Tracker.out : $(OBJECTS_Team-2-Line-Tracker)
+	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@";rm -f "$@";nmppc $(OBJECTS_Team-2-Line-Tracker) $(IDE_LIBRARIES) | tclsh $(WIND_BASE)/host/resource/hutils/tcl/munch.tcl -c ppc > $(OBJ_DIR)/ctdt.c; $(TOOL_PATH)ccppc $(DEBUGFLAGS_Linker) $(CC_ARCH_SPEC) -fdollars-in-identifiers -Wall $(ADDED_CFLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL   $(DEFINES)  -o $(OBJ_DIR)/ctdt.o -c $(OBJ_DIR)/ctdt.c; $(TOOL_PATH)ccppc -r -nostdlib -Wl,-X -T $(WIND_BASE)/target/h/tool/gnu/ldscripts/link.OUT -o "$@" $(OBJ_DIR)/ctdt.o $(OBJECTS_Team-2-Line-Tracker) $(IDE_LIBRARIES) $(LIBPATH) $(LIBS)  $(ADDED_LIBPATH) $(ADDED_LIBS) && if [ "$(EXPAND_DBG)" = "1" ]; then plink "$@";fi
+
+Team\ 2\ Line\ Tracker/$(MODE_DIR)/Team\ 2\ Line\ Tracker_compile_file : $(FILE) ;
+
+_clean :: Team\ 2\ Line\ Tracker/$(MODE_DIR)/Team\ 2\ Line\ Tracker_clean
+
+Team\ 2\ Line\ Tracker/$(MODE_DIR)/Team\ 2\ Line\ Tracker_clean : 
+	$(TRACE_FLAG)if [ -d "Team 2 Line Tracker" ]; then cd "Team 2 Line Tracker"; rm -rf $(MODE_DIR); fi
 
 force : 
 
-DEP_FILES := Robot-2-Line-Tracker/$(MODE_DIR)/Objects/Robot-2-Line-Tracker/Commands/AutonomousCommand.d Robot-2-Line-Tracker/$(MODE_DIR)/Objects/Robot-2-Line-Tracker/Commands/DisplayButtons.d Robot-2-Line-Tracker/$(MODE_DIR)/Objects/Robot-2-Line-Tracker/Commands/Drivetowall.d \
-	 Robot-2-Line-Tracker/$(MODE_DIR)/Objects/Robot-2-Line-Tracker/Commands/Followline.d Robot-2-Line-Tracker/$(MODE_DIR)/Objects/Robot-2-Line-Tracker/Commands/Searchforline.d Robot-2-Line-Tracker/$(MODE_DIR)/Objects/Robot-2-Line-Tracker/Commands/TeleopJoystickDrive.d \
-	 Robot-2-Line-Tracker/$(MODE_DIR)/Objects/Robot-2-Line-Tracker/Commands/TeleopXboxDrive.d Robot-2-Line-Tracker/$(MODE_DIR)/Objects/Robot-2-Line-Tracker/Commands/Turnleft.d Robot-2-Line-Tracker/$(MODE_DIR)/Objects/Robot-2-Line-Tracker/Commands/Turnright.d \
-	 Robot-2-Line-Tracker/$(MODE_DIR)/Objects/Robot-2-Line-Tracker/Commands/XboxDrive.d Robot-2-Line-Tracker/$(MODE_DIR)/Objects/Robot-2-Line-Tracker/OI.d Robot-2-Line-Tracker/$(MODE_DIR)/Objects/Robot-2-Line-Tracker/Robot.d \
-	 Robot-2-Line-Tracker/$(MODE_DIR)/Objects/Robot-2-Line-Tracker/RobotMap.d Robot-2-Line-Tracker/$(MODE_DIR)/Objects/Robot-2-Line-Tracker/Subsystems/Drivetrain.d Robot-2-Line-Tracker/$(MODE_DIR)/Objects/Robot-2-Line-Tracker/Subsystems/Linetracker.d \
-	 Robot-2-Line-Tracker/$(MODE_DIR)/Objects/Robot-2-Line-Tracker/Subsystems/Orientation.d Robot-2-Line-Tracker/$(MODE_DIR)/Objects/Robot-2-Line-Tracker/Subsystems/Rangefinder.d
+DEP_FILES := Team\ 2\ Line\ Tracker/$(MODE_DIR)/Objects/Team\ 2\ Line\ Tracker/Commands/AutonomousCommand.d Team\ 2\ Line\ Tracker/$(MODE_DIR)/Objects/Team\ 2\ Line\ Tracker/Commands/DisplayButtons.d Team\ 2\ Line\ Tracker/$(MODE_DIR)/Objects/Team\ 2\ Line\ Tracker/Commands/Drivetowall.d \
+	 Team\ 2\ Line\ Tracker/$(MODE_DIR)/Objects/Team\ 2\ Line\ Tracker/Commands/Followline.d Team\ 2\ Line\ Tracker/$(MODE_DIR)/Objects/Team\ 2\ Line\ Tracker/Commands/Searchforline.d Team\ 2\ Line\ Tracker/$(MODE_DIR)/Objects/Team\ 2\ Line\ Tracker/Commands/ShowGyroValue.d \
+	 Team\ 2\ Line\ Tracker/$(MODE_DIR)/Objects/Team\ 2\ Line\ Tracker/Commands/TeleopJoystickDrive.d Team\ 2\ Line\ Tracker/$(MODE_DIR)/Objects/Team\ 2\ Line\ Tracker/Commands/TeleopXboxDrive.d Team\ 2\ Line\ Tracker/$(MODE_DIR)/Objects/Team\ 2\ Line\ Tracker/Commands/TurnRightPID.d \
+	 Team\ 2\ Line\ Tracker/$(MODE_DIR)/Objects/Team\ 2\ Line\ Tracker/Commands/Turnleft.d Team\ 2\ Line\ Tracker/$(MODE_DIR)/Objects/Team\ 2\ Line\ Tracker/Commands/Turnright.d Team\ 2\ Line\ Tracker/$(MODE_DIR)/Objects/Team\ 2\ Line\ Tracker/Commands/UpdateTurnPIDValues.d \
+	 Team\ 2\ Line\ Tracker/$(MODE_DIR)/Objects/Team\ 2\ Line\ Tracker/Commands/XboxDrive.d Team\ 2\ Line\ Tracker/$(MODE_DIR)/Objects/Team\ 2\ Line\ Tracker/OI.d Team\ 2\ Line\ Tracker/$(MODE_DIR)/Objects/Team\ 2\ Line\ Tracker/Robot.d \
+	 Team\ 2\ Line\ Tracker/$(MODE_DIR)/Objects/Team\ 2\ Line\ Tracker/RobotMap.d Team\ 2\ Line\ Tracker/$(MODE_DIR)/Objects/Team\ 2\ Line\ Tracker/Subsystems/Drivetrain.d Team\ 2\ Line\ Tracker/$(MODE_DIR)/Objects/Team\ 2\ Line\ Tracker/Subsystems/Linetracker.d \
+	 Team\ 2\ Line\ Tracker/$(MODE_DIR)/Objects/Team\ 2\ Line\ Tracker/Subsystems/Orientation.d Team\ 2\ Line\ Tracker/$(MODE_DIR)/Objects/Team\ 2\ Line\ Tracker/Subsystems/Rangefinder.d
 -include $(DEP_FILES)
 
 

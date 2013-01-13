@@ -1,4 +1,5 @@
 # Git Ignore file for first robot projects
-*.[od]     # ignore the build files.
-*~         # ignore the files created by the robot builder.
-PPC603gnu/ # ignore the build folder
+*.o     # ignore the build files.
+*.d
+*~
+PPC603gnu/*
