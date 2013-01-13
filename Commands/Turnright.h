@@ -8,7 +8,6 @@
 // update. Deleting the comments indicating the section will prevent
 // it from being updated in th future.
 
-
 #ifndef TURN_RIGHT_H
 #define TURN_RIGHT_H
 
@@ -39,7 +38,7 @@ public:
 	virtual void Interrupted();
 	
 	float GetPIDError();
-	bool GetOnTarget();
+	bool IsOnTarget();
 	void SetThreshold(float threshold);
 	void SetPID(float p, float i, float d);
 };
