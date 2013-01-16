@@ -8,10 +8,8 @@
 // update. Deleting the comments indicating the section will prevent
 // it from being updated in th future.
 
-
-#ifndef SEARCH_FOR_LINE_H
-#define SEARCH_FOR_LINE_H
-
+#ifndef TURN_DEGREES_H
+#define TURN_DEGREES_H
 
 #include "Commands/Subsystem.h"
 #include "../Robot.h"
@@ -21,14 +19,34 @@
  *
  * @author ExampleAuthor
  */
-class Searchforline: public Command {
+class TurnDegrees: public Command
+{
+private:
+   float m_Pgain;   // static PID parameters to allow setting
+   float m_Igain;   // from any class instance
+   float m_Dgain;
+   float m_turnDegrees;
+   float m_startGyroAngle;
+   float m_setPoint;
+   float m_threshold;
+   bool m_inRange;
+   PIDController *m_PIDcontroller;
+   Timer *m_timer;
+   
 public:
-	Searchforline();
+   TurnDegrees();
+	TurnDegrees(float degrees);
+	~TurnDegrees();
 	virtual void Initialize();
 	virtual void Execute();
 	virtual bool IsFinished();
 	virtual void End();
 	virtual void Interrupted();
+   
+   float GetPIDError();
+   bool IsOnTarget();
+   void SetThreshold(float threshold);
+   void SetPID(float p, float i, float d);
 };
 
 #endif

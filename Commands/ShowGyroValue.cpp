@@ -21,7 +21,7 @@ void ShowGyroValue::Initialize() {
 // Called repeatedly when this Command is scheduled to run
 void ShowGyroValue::Execute() 
 {
-   SmartDashboard::PutNumber("Gyro", Robot::orientation->gyro->GetAngle());
+   SmartDashboard::PutNumber("Gyro", Robot::drivetrain->drivetrainGyro->GetAngle());
 }
 // Make this return true when this Command no longer needs to run execute()
 bool ShowGyroValue::IsFinished() {

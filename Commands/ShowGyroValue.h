@@ -8,10 +8,8 @@
 // update. Deleting the comments indicating the section will prevent
 // it from being updated in th future.
 
-
 #ifndef SHOW_GYRO_VALUE_H
 #define SHOW_GYRO_VALUE_H
-
 
 #include "Commands/Subsystem.h"
 #include "../Robot.h"

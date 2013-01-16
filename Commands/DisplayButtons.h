@@ -8,10 +8,8 @@
 // update. Deleting the comments indicating the section will prevent
 // it from being updated in th future.
 
-
 #ifndef DISPLAY_BUTTONS_H
 #define DISPLAY_BUTTONS_H
-
 
 #include "Commands/Subsystem.h"
 #include "../Robot.h"

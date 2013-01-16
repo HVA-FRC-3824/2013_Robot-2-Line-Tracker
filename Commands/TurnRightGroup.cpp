@@ -8,21 +8,16 @@
 // update. Deleting the comments indicating the section will prevent
 // it from being updated in th future.
 
-#include "AutonomousCommand.h"
+#include "TurnRightGroup.h"
 #include "TurnDegrees.h"
 
-AutonomousCommand::AutonomousCommand() {
+TurnRightGroup::TurnRightGroup() {
 	// Add Commands here:
 	// e.g. AddSequential(new Command1());
 	//      AddSequential(new Command2());
 	// these will run in order.
+
    AddSequential(new TurnDegrees(0.5));
-   AddSequential(new TurnDegrees(-1.0));
-   AddSequential(new TurnDegrees(1.0));
-   AddSequential(new TurnDegrees(-1.0));
-   AddSequential(new TurnDegrees(1.0));
-   AddSequential(new TurnDegrees(-0.5));
-   
 	// To run multiple commands at the same time,
 	// use AddParallel()
 	// e.g. AddParallel(new Command1());

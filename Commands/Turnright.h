@@ -22,6 +22,9 @@
 class Turnright: public Command 
 {
 private:
+   float m_Pgain;   // static PID parameters to allow setting
+   float m_Igain;   // from any class instance
+   float m_Dgain;
    float m_startGyroAngle;
    float m_setPoint;
    float m_threshold;
